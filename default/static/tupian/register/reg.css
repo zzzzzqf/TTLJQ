@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+img{border:0}
+body{font:12px "Microsoft YaHei";}
+
+/*=================header===================*/
+#header{width:100%;
+	height:90px;
+	border-bottom:2px solid #f00;}
+.head{width:888px;
+	margin:0 auto}
+.head img,.head p{float:left}
+.head img{margin-top:34px;}
+.head p{margin-top:54px}
+.head p a{font-size:14px;
+		  color:#f00;
+		  }
+.head span{float:right;margin-top:60px}
+.head span a{color:#666;font-size:12px;}
+/*=================main===================*/
+#main{width:100%;height:442px;background:url(../i/ditu.jpg) no-repeat;background-position:center;margin:0 auto;}
+#main .bt{font:25px "Microsoft YaHei";margin:40px 0 30px 0;text-align:center}
+.zhuce{width:888px;height:285px;background:#f7f7f7;margin:0 auto;border:1px solid #d4d4d4}
+.left,.right{float:left;padding-top:35px}
+.left_top,.right_top{height:175px}
+.left_bot p,.right_bot p{margin-top:9px;margin-left:25%;color:#646464;margin-right:7px}
+.left_bot span,.right_bot span{position:absolute;left:177px;top:216px;color:#fff;cursor:pointer;font-size:14px}
+/*====================public  end=======================*/
+/*s  left*/
+.left{width:444px;height:250px;position:relative}
+.left_top img,.left_top p,.left_top .xq{float:left}
+.left_top img{margin-left:37px;margin-right:35px}
+.zhuce .left_top .maijia{font-size:18px;color:#8b4b3e;margin:40px 0 7px;}
+.zhuce .left_top .xq{font-size:14px;color:#bd9b94;margin-bottom:2px;}
+.left_bot p,.left_bot img{float:left}
+/*left end*/
+/*s  right*/
+.right{width:443px;height:250px;border-left:1px solid #d4d4d4;position:relative}
+.right .one{float:right;margin-right:34px;}
+.zhuce .right_top .maijia{font-size:18px;color:#8b4b3e;position:relative;top:40px;left:15px}
+.zhuce .right_top .xq1{font-size:14px;color:#bd9b94;margin-top:47px;margin-left:16px}
+.zhuce .right_top .xq2{font-size:14px;color:#bd9b94;margin-top:2px;margin-left:16px}
+.right_bot p,.right_bot .sj{float:left}
+/*right end*/
+.clear{clear:both}
+
+/*=================footer===================*/
+.footer{text-align:center;color:#898989}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

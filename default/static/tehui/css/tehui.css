@@ -1,0 +1,341 @@
+.easybuy-list{overflow:hidden;}
+.clearfix {zoom: 1;}
+.clearfix:before, .clearfix:after {display: table;content: "";}
+.easybuy-list .easybuy-list-inner{width: 110%;}
+.easybuy-list .bl-border-box{float: left;}
+.bl-border-box
+{
+	box-shadow:0 1px 2px 0 rgba(158,158,158,.2);
+	width:225px;
+	border:1px solid #e8e8e8;
+	border-radius:4px;
+	margin-right:16px;
+	margin-bottom:20px;
+	overflow:hidden;
+	background:#fff;
+	position:relative!important;
+}
+.bl-border-box:hover {
+border-color: #d5aa90;
+}
+.bl-border-box .img
+{
+	width:225px;
+	position:relative;
+}
+.bl-border-box .img img
+{
+	display:block;
+	width:225px;
+}
+.bl-border-box .img .value-percent
+{
+	color:#fff;
+	background:#f40;
+	border-radius:2px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	z-index:10;
+	padding:0 5px;
+}
+.bl-border-box .love-tag
+{
+	cursor:pointer;
+	position:absolute;
+	z-index:10;
+	top:10px;
+	right:10px;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #ccc;
+	text-align:center;
+	color:#777;
+	font-size:20px;
+	background:rgba(255,255,255,.9);
+	border-radius:2px;
+	display:none;
+}
+.bl-border-box .title
+{
+	line-height:20px;
+	font-size:12px;
+	max-height:44px;
+	overflow:hidden;
+	margin:10px;
+}
+.bl-border-box .title a em {
+color: #e22c37;
+}
+.bl-border-box .price
+{
+	margin:5px 10px;
+}
+.bl-border-box .price .value
+{
+	font-size:20px;
+	color:#777;
+}
+.bl-border-box .price .value-del
+{
+	color:#bebebe;
+	text-decoration:line-through;
+	margin-left:5px;
+}
+.bl-border-box .price .price-extend
+{
+	float:right;
+	color:#a3a3a3;
+}
+
+.bl-border-box .price .value-percent
+{
+	float:right;
+	color:#fff;
+	background:#f40;
+	border-radius:2px;
+	margin-top:5px;
+	padding:0 5px;
+}
+.bl-border-box .promotion
+{
+	color:#e22c37;
+	font-size:16px;
+}
+.bl-border-box .saleinfo
+{
+	margin:10px;
+}
+.bl-border-box .saleinfo .tags .ico-wangwang,.bl-border-box .saleinfo .tags .ww-light
+{
+	float:left;
+	width:24px;
+	height:22px;
+	margin-left:2px;
+}
+.bl-border-box .saleinfo .tags .ww-online,.bl-border-box .saleinfo .tags .ww-offline
+{
+	width:24px;
+	height:22px;
+	background:url(../images/su.png) no-repeat;
+}
+
+.bl-border-box .saleinfo .tags .tag-wang-off,.bl-border-box .saleinfo .tags .ww-offline
+{
+	background-position:-84px 0;
+}
+
+.bl-border-box .saleinfo .tags .tag-tmall
+{
+	float:left;
+	width:24px;
+	height:22px;
+	margin-left:2px;
+	background-position:-30px 0;
+}
+
+.bl-border-box .saleinfo .tags .hot-label
+{
+	float:left;
+	line-height:20px;
+	margin-left:2px;
+	background:#f40;
+	color:#fff;
+	border-radius:2px;
+	padding:0 2px;
+}
+
+.bl-border-box .share-txt
+{
+	border-top:1px solid #e8e8e8;
+	background:#fafafa;
+	padding:10px;
+}
+
+.bl-border-box .share-txt .words
+{
+	line-height:20px;
+	margin-bottom:10px;
+}
+
+.bl-border-box .share-txt .user-name
+{
+	margin-right:5px;
+	color:#978375;
+}
+
+.bl-border-box .share-txt .user img
+{
+	width:30px;
+	height:30px;
+	border-radius:15px;
+	display:block;
+	margin-right:10px;
+}
+
+.bl-border-box .share-txt .user-noimg
+{
+	line-height:20px;
+	margin-bottom:2px;
+}
+
+.bl-border-box .img-extend .img-tag
+{
+	position:absolute;
+	width:33px;
+	height:33px;
+	top:-1px;
+	left:12px;
+	z-index:10;
+}
+
+.bl-border-box .img-dapei .img-small
+{
+	margin:5px 0;
+}
+
+.bl-border-box .img-dapei .img-small img
+{
+	width:50px;
+	height:50px;
+	float:left;
+	margin-left:5px;
+}
+
+.bl-border-box .img-dapei .img-tag
+{
+	background-position:0 -30px;
+}
+
+.bl-border-box .img-zhuanji
+{
+	margin:8px;
+}
+
+.bl-border-box .img-zhuanji .img-small
+{
+	overflow:hidden;
+	margin:5px 0;
+}
+
+.bl-border-box .img-zhuanji .img-small img
+{
+	width:67px;
+	height:67px;
+	float:left;
+	margin-right:3px;
+}
+
+.bl-border-box .img-zhuanji .img-tag
+{
+	background-position:-40px -30px;
+	top:-8px;
+}
+
+.bl-border-box .img-youhui .img-tag
+{
+	background-position:-86px -30px;
+	top:-1px;
+}
+
+.bl-border-box .img-youhui .img-tag-mgl
+{
+	position:absolute;
+	width:62px;
+	height:61px;
+	top:0;
+	right:0;
+	z-index:10;
+	background-position:-140px 0;
+}
+
+.bl-border-box .box-action
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:39px;
+	line-height:39px;
+	width:280px;
+	border-top:1px solid #e8e8e8;
+	background:#fafafa;
+	overflow:hidden;
+	display:none;
+	text-align:center;
+}
+
+.bl-border-box .box-action a
+{
+	float:left;
+	width:140px;
+	text-align:center;
+	margin-left:-1px;
+	border-left:1px solid #e8e8e8;
+}
+
+.bl-border-box .box-aciton-2 a
+{
+	width:139px;
+}
+
+.bl-border-box .box-aciton-3 a
+{
+	width:93px;
+}
+.easybuy-box
+{
+	margin-right:20px;
+	width:280px;
+	float:left;
+}
+
+.easybuy-box .img
+{
+	width:280px;
+	height:280px;
+	overflow:hidden;
+	text-align:center;
+}
+
+.easybuy-box .img .img-cell
+{
+	height:280px;
+	vertical-align:middle;
+	display:block;
+	font-size:246px;
+	font-family:Arial;
+}
+
+.easybuy-box .img img
+{
+	width:280px;
+	vertical-align:middle;
+	margin:0 auto;
+}
+
+.easybuy-box .title
+{
+	height:44px;
+	overflow:hidden;
+}
+
+.easybuy-box .price
+{
+	height:30px;
+	overflow:hidden;
+}
+
+.easybuy-box .share-txt .words
+{
+	height:40px;
+	overflow:hidden;
+	margin-bottom:0;
+}
+.bl-border-box .img-extend {
+	position:relative;
+}
+.bl-border-box .price .value em {
+	color:#e22c37;
+	font-weight:700;
+}

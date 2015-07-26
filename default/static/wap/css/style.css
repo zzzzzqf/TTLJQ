@@ -1,0 +1,171 @@
+ @charset "utf-8";
+/* CSS Document */
+/* 
+	Author: 华美网络
+	Author URI: http://bbs.138gzs.com
+	Version: 1.0
+*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0; font: 400 14px/1.5 Arial, sans-serif; }
+html { overflow-x: hidden; }
+body { height: 100%; overflow-x: hidden; background: rgba(242,237,230,1); }
+fieldset, img { border: 0px; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+:focus { outline: 0 none; }
+ul, li { list-style: none; }
+em { font-style: normal; }
+.clear { clear: both; }
+/*包装器S*/
+.wrapper { width: 100%; height: 100%; }
+.main { width: 100%; min-width: 213px; max-width: 750px; margin: 0 auto; position: relative; background: #f6f6f6; }
+/*包装器E*/
+/*页头S*/
+#header { width: 100%; min-width: 213px; max-width: 750px; overflow: inherit; z-index: 200; top: 0px; }
+.h_top { width: 100%; height: 44px; z-index: 999; position: relative; background: #f93867 url(../images/header-bar.jpg) no-repeat top center; background-size: 100% auto; }
+.h_top span { display: block; height: 44px; line-height: 22px; cursor: pointer; }
+#find_nav { width: 52px; float: left; }
+#find_nav i { width: 29px; height: 25px; display: block; margin: 10px auto; }
+#logo { width: 120px; margin-left: 50%; left: -60px; position: absolute; }
+#logo i { width: 52px; height: 23px; display: block; margin: 12px auto; }
+#find_search { width: 52px; float: right; }
+#find_search i { width: 29px; height: 25px; display: block; margin: 10px auto; }
+#search_box { background: #FFEFEF; z-index: 2; }
+.search { width: 63.375%; position: relative; border-radius: 4px; border: 1px #d1d1d1 solid; margin: 10px; background: #FFF; height: 30px; padding: 0 35px 0 15px; float: left; }
+.search input { width: 100%; font: -webkit-small-control; font-size: 14px; color: initial; letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block; text-align: start; border: none; outline-style: none; word-break: normal; vertical-align: middle; padding: 6px 0 3px; background: none; }
+.bsearch input:focus { outline-offset: -2px; }
+.search .delete_button { width: 19px; height: 19px; border-radius: 13px; position: absolute; display: none; right: 6px; top: 6px; display: none; background-size: 100%; }
+.search .delete_button i img { display: inline-block; width: 18px; height: 18px; }
+#search_box button { width: 37px; height: 30px; float: right; padding: 0; margin-top: 12px; -webkit-box-sizing: border-box; background: rgba(245,237,228,.9); border: 1px; border-radius: 3px; position: relative; margin-right: 2%; cursor: pointer; }
+#search_box button i { width: 37px; height: 30px; display: inline-block; }
+#search_box button i img { width: 37px; }
+.view { position: absolute; top: 0; left: 0; display: none; width: 100%; height: 100%; }
+.currents { width: 100%; min-width: 213px; max-width: 750px; margin: 30px auto 0px auto; height: 50px; display: block; -webkit-transition: -webkit-transform 200ms; -webkit-transform: translate3d(0, 22%, 0); -ms-transition: -ms-transform 200ms; -ms-transform: translate3d(0, 22%, 0); transition: transform 200ms; transform: translate3d(0, 22%, 0); }
+.currents.out { max-width: 640px; min-width: 213px; height: 50px; -webkit-transition: -webkit-transform 200ms; -webkit-transform: translate3d(0, -106%, 0); -ms-transition: -ms-transform 200ms; -ms-transform: translate3d(0, -106%, 0); transition: transform 200ms; transform: translate3d(0, -106%, 0); }
+#nav { height: 100%; width: 200px; position: absolute; top: 0px; left: 0px; background-color: #fff; z-index: 2000; color: #424242; -webkit-transform: translate3d(-200px, 0, 0); transform: translate3d(-200px, 0, 0); -webkit-transition: all .3s ease-in-out; transition: all .3s ease-in-out; overflow: hidden; display: none; }
+#nav #close { width: 15px; height: 15px; cursor: pointer; position: absolute; top: 9px; right: 9px; z-index: 2001; background: url(../images/close.png); }
+#nav ul.nav_list { margin-top: 35px; padding-left: 24px; }
+#nav ul li { line-height: 40px; border-bottom: 1px solid #e5e5e5; line-height: 40px; border-bottom: 1px solid #e5e5e5; }
+#nav ul li a { display: block; width: 100%; height: 100%; text-decoration: none; color: #5e5e5e; }
+/*页头E*/
+/*幻灯片S*/
+@media screen and (max-width:316px) {
+.slide .sub { width: 140px; }
+.home_nav { display: none; }
+.search { width: 40.375%; }
+}
+.swipe_wrap { width: 100%; position: relative; }
+.slide { width: 100%; height: 100%; position: relative; padding: 21% 0; left: 0; overflow: hidden; display: -webkit-box; visibility: visible; }
+.slide .banner { width: 100%; display: -webkit-box; display: -moz-box; height: 100%; position: absolute; top: 0; left: 0; overflow: hidden; }
+.slide .banner li { width: 100%; left: 0; position: absolute; top: 0; }
+.slide .banner li img { width: 100%; height: auto; border: 0; }
+.slide .sub { position: absolute; bottom: 12px; left: 50%; padding: 3px 1px; height: 9px; border-radius: 5px; -webkit-transform: translateX(-50%); z-index: 9; }
+.slide .sub li { width: 2px; height: 2px; background-color: #D8D8D8; float: left; list-style: none outside none; margin: 0 10px; overflow: hidden; cursor: pointer; opacity: 0.5; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+padding: 5px; border-radius: 10px; }
+.slide .sub li.on { width: 2px; height: 2px; padding: 5px; border-radius: 10px; background-color: #FF6161; }
+/*幻灯片E*/
+/*首页导航S*/
+.home_nav { width: 100%; min-width: 213px; max-width: 750px; height: 220px; margin: 0 auto; position: relative; background: #FFFFFF; }
+.home_nav ul { margin-top: 5px; }
+.home_nav ul a { display: block; color: #6B6B6B; }
+.home_nav ul li { width: 25%; height: 100%; min-height: 100px; float: left; text-align: center; }
+.home_nav ul li img { width: 50px; margin-top: 20px; }
+.home_nav ul li i { display: block; font-style: normal; }
+/*首页导航E*/
+/*分类导航S*/
+#cate_nav { border-bottom: .1em #d1d1d1 solid; font-size: 14px; height: auto; display: box; display: -webkit-box; display: -moz-box; top: 0; left: 0; z-index: 5; background: #f6f6f6; }
+#cate_nav ul { -webkit-box-flex: 1; line-height: 35px; overflow: hidden; transition: height .3s linear; }
+#cate_nav ul li { height: 35px; list-style: none; float: left; margin-left: 15px; line-height: 35px; font-size: 13px; }
+#cate_nav ul li a { color: #5e5e5e; text-decoration: none; }
+#cate_nav ul li a.active { border-bottom: #fc5979 1px solid; }
+/*分类导航E*/
+/*商品列表S*/
+#goods { height: 100%; width: 100%;margin-top: 20px; }
+.grid { max-width: 100%; list-style: none; margin: 0px auto; padding: 0px; }
+.grid li { width: 46%; display: inline-block; float: left; padding: 0px; opacity: 1; border: 1px #EDEDED solid; margin:auto 1% 15px 2%;background: #fff; }
+.grid li.shown, .no-js .grid li, .no-cssanimations .grid li { opacity: 1; }
+.grid li a, .grid li img { width: 100%; outline: none; border: none; display: block;}
+/* Effect 1: opacity */
+.grid.effect-1 li.animate { -webkit-animation: fadeIn 0.65s ease forwards; -moz-animation: fadeIn 0.65s ease forwards; animation: fadeIn 0.65s ease forwards; }
+#grid a { text-decoration: none; }
+#grid .tmall { width: 15px; height: 15px; position: absolute; top: 0px; left: 0; }
+#grid h1 { width: 94%; height: 20px; font-size: 12px;font-family: Arial,sans-serif; font-weight: 300; color: #5e5e5e; padding: 10px 6px 0px 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#grid .info { width: 94%; height: 18px; line-height: 18px; position: relative;right: 2px;padding-bottom: 5px; padding-left: 5px; }
+#grid .info i { font-family: "微软雅黑"; font-style: normal; font-size: 12px; }
+#grid .price { font-size: 12px; color: #ee4566; }
+#grid .been_sold { display: block; position: absolute; height: 18px; line-height: 18px; font-size: 12px; text-align: right; top: 4px; right: -2px; text-indent: 13px; background: url(../images/xin.jpg) 0 center no-repeat; background-size: 10px auto; color: #727272; }
+@-webkit-keyframes fadeIn {to {opacity: 1;}}
+@-moz-keyframes fadeIn {to {opacity: 1;}}
+@keyframes fadeIn {to {opacity: 1;}}
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate { -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px); -webkit-animation: moveUp 0.65s ease forwards; -moz-animation: moveUp 0.65s ease forwards; animation: moveUp 0.65s ease forwards; }
+@-webkit-keyframes moveUp {to {-webkit-transform: translateY(0);opacity: 1;}}
+@-moz-keyframes moveUp {to {-moz-transform: translateY(0);opacity: 1;}}
+@keyframes moveUp {to {transform: translateY(0);opacity: 1;}}
+/* Effect 3: Scale up */
+.grid.effect-3 li.animate { -webkit-transform: scale(0.6); -moz-transform: scale(0.6); transform: scale(0.6); -webkit-animation: scaleUp 0.65s ease-in-out forwards; -moz-animation: scaleUp 0.65s ease-in-out forwards; animation: scaleUp 0.65s ease-in-out forwards; }
+@-webkit-keyframes scaleUp {to {-webkit-transform: scale(1);opacity: 1;}}
+@-moz-keyframes scaleUp {to {-moz-transform: scale(1);opacity: 1;}}
+@keyframes scaleUp {to {transform: scale(1);opacity: 1;}}
+/* Effect 4: fall perspective */
+.grid.effect-4 { -webkit-perspective: 1300px; -moz-perspective: 1300px; perspective: 1300px; }
+.grid.effect-4 li.animate { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg); -moz-transform: translateZ(400px) translateY(300px) rotateX(-90deg); transform: translateZ(400px) translateY(300px) rotateX(-90deg); -webkit-animation: fallPerspective .8s ease-in-out forwards; -moz-animation: fallPerspective .8s ease-in-out forwards; animation: fallPerspective .8s ease-in-out forwards; }
+@-webkit-keyframes fallPerspective {100% {-webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);opacity: 1;}}
+@-moz-keyframes fallPerspective {100% {-moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);opacity: 1;}}
+@keyframes fallPerspective {100% {transform: translateZ(0px) translateY(0px) rotateX(0deg);opacity: 1;}}
+/* Effect 5: fly*/
+.grid.effect-5 { -webkit-perspective: 1300px; -moz-perspective: 1300px; perspective: 1300px; }
+.grid.effect-5 li.animate { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform-origin: 50% 50% -300px; -moz-transform-origin: 50% 50% -300px; transform-origin: 50% 50% -300px; -webkit-transform: rotateX(-180deg); -moz-transform: rotateX(-180deg); transform: rotateX(-180deg); -webkit-animation: fly .8s ease-in-out forwards; -moz-animation: fly .8s ease-in-out forwards; animation: fly .8s ease-in-out forwards; }
+@-webkit-keyframes fly {100% {-webkit-transform: rotateX(0deg);opacity: 1;}}
+@-moz-keyframes fly {100% {-moz-transform: rotateX(0deg);opacity: 1;}}
+@keyframes fly {100% {transform: rotateX(0deg);opacity: 1;}}
+/* Effect 6: flip*/
+.grid.effect-6 { -webkit-perspective: 1300px; -moz-perspective: 1300px; perspective: 1300px; }
+.grid.effect-6 li.animate { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform-origin: 0% 0%; -moz-transform-origin: 0% 0%; transform-origin: 0% 0%; -webkit-transform: rotateX(-80deg); -moz-transform: rotateX(-80deg); transform: rotateX(-80deg); -webkit-animation: flip .8s ease-in-out forwards; -moz-animation: flip .8s ease-in-out forwards; animation: flip .8s ease-in-out forwards; }
+@-webkit-keyframes flip {100% {-webkit-transform: rotateX(0deg);opacity: 1;}}
+@-moz-keyframes flip {100% {-moz-transform: rotateX(0deg);opacity: 1;}}
+@keyframes flip {100% {transform: rotateX(0deg);opacity: 1;}}
+/* Effect 7: helix */
+.grid.effect-7 { -webkit-perspective: 1300px; -moz-perspective: 1300px; perspective: 1300px; }
+.grid.effect-7 li.animate { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: rotateY(-180deg); -moz-transform: rotateY(-180deg); transform: rotateY(-180deg); -webkit-animation: helix .8s ease-in-out forwards; -moz-animation: helix .8s ease-in-out forwards; animation: helix .8s ease-in-out forwards; }
+@-webkit-keyframes helix { 100% {-webkit-transform: rotateY(0deg);opacity: 1;} }
+@-moz-keyframes helix { 100% { -moz-transform: rotateY(0deg);opacity: 1;} }
+@keyframes helix { 100% {transform: rotateY(0deg);opacity: 1;}}
+/* Effect 8:  */
+.grid.effect-8 { -webkit-perspective: 1300px; -moz-perspective: 1300px; perspective: 1300px; }
+.grid.effect-8 li.animate { -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: scale(0.4); -moz-transform: scale(0.4); transform: scale(0.4); -webkit-animation: popUp .8s ease-in forwards; -moz-animation: popUp .8s ease-in forwards; animation: popUp .8s ease-in forwards; }
+@-webkit-keyframes popUp {
+70% {-webkit-transform: scale(1.1);opacity: .8;-webkit-animation-timing-function: ease-out;}
+100% {-webkit-transform: scale(1);opacity: 1;}
+}
+@-moz-keyframes popUp {
+70% {-moz-transform: scale(1.1);opacity: .8;-moz-animation-timing-function: ease-out;}
+100% {-moz-transform: scale(1);opacity: 1;}
+}
+@keyframes popUp {
+70% {transform: scale(1.1);opacity: .8;animation-timing-function: ease-out;}
+100% {transform: scale(1);opacity: 1;}
+}
+@media screen and (max-width: 640px) {.grid { max-width: 640px; list-style: none; margin: 0px auto; padding: 0px; }}
+@media screen and (max-width: 480px) {.grid { max-width: 480px; list-style: none; margin: 0px auto; padding: 0px; }}
+@media screen and (max-width: 200px) {.grid li { width: 100%; }}
+/*商品列表E*/
+/*分页导航S*/
+.paging { width: 100%; height: 80px; overflow: hidden; }
+.paging a { height: 25px; line-height: 25px; color: #ffffff; display: inline-block; font-size: 12px; padding: 0 6px; border-radius: 20px; margin: 0px auto 0px 5px; cursor: pointer; background: #FD7690; }
+.paging a:hover { text-decoration: none; background: #FF89A0; }
+.paging span { height: 25px; line-height: 25px; color: #ffffff; display: inline-block; font-size: 12px; padding: 0 9px; border-radius: 20px; margin: 0px auto 0px 5px; cursor: pointer; background: #FFCBCB; }
+.paging span:hover { text-decoration: none; background: #FD7690; }
+.paging_nav { height: 80px; line-height: 80px; text-align: center; }
+/*分页导航E*/
+/*回到顶部S*/
+.totop { position: fixed; width: 40px; height: 40px; line-height: 40px; bottom: 60px; right: 10px; background: url(../images/totop.png); z-index: 9999; }
+.totop a { width: 40px; height: 40px; display: block; text-align: center; color: #ffffff; text-decoration: none; }
+/*回到顶部E*/
+/*页脚S*/
+#foot { width: 100%; min-width: 213px; max-width: 750px; height: 77px; margin: 0 auto; position: relative; background: #ffffff; border-top: 1px solid rgba(200,196,194,1); }
+.foot_nav { height: 40px; line-height: 40px; position: relative; }
+.foot_nav a { width: 33.33%; height: 25px; line-height: 25px; color: #6e6e6e; display: inline-block; font-size: 14px; margin: 0 auto; text-align: center; }
+.foot_nav i:after { content: '-'; height: 28px; width: 1px; background: #CCC; position: absolute; top: 8px; font-size: 0; text-indent: -9999px; background: -moz-linear-gradient(top, #FFF, #CCC, #FFF); background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#FFF), color-stop(0.5, #CCC)); }
+.foot_copyright { text-align: center; color: #D2D2D2; font-size: 12px; line-height: 25px; }
+.foot_copyright:before { display: block; content: ""; background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#b4b4b4), to(#efefef)); background-image: -webkit-radial-gradient(circle, #b4b4b4, #efefef); background-image: -moz-radial-gradient(circle, #b4b4b4, #efefef); background-image: radial-gradient(circle, #b4b4b4, #efefef); background-repeat: no-repeat; height: 1px; overflow: hidden; }
+/*页脚E*/
